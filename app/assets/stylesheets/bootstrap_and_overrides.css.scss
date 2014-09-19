@@ -23,6 +23,16 @@ a[href*=new] {
 	@extend .btn-success;
 }
 
+textarea {
+	@extend .form-control;
+	width: 40%;
+}
+
+input[type=text] {
+	@extend .form-control;
+	width: 40%;
+}
+
 input[name=commit] {
 	@extend .btn;
 	@extend .btn-sm;
