@@ -1,2 +1,30 @@
 @import "bootstrap";
 //body { padding-top: 60px; }
+a {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-primary;
+}
+
+table {
+	@extend .table;
+	@extend .table-striped;
+}
+
+a[data-method*=delete] {
+	@extend .btn-danger;
+}
+
+a[href*=edit] {
+	@extend .btn-warning;
+}
+
+a[href*=new] {
+	@extend .btn-success;
+}
+
+input[name=commit] {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-success;
+}
